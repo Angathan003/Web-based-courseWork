@@ -1,0 +1,29 @@
+<data>
+    <product>
+        <name>Product 1</name>
+        <price>19.99</price>
+        <description>This is a description of Product 1.</description>
+        <reviews>
+            <review>
+                <user>John Doe</user>
+                <rating>4.5</rating>
+                <comment>This product is great!</comment>
+            </review>
+            <!-- Add more review entries as needed -->
+        </reviews>
+    </product>
+    <product>
+        <name>Product 2</name>
+        <price>29.99</price>
+        <description>This is a description of Product 2.</description>
+        <reviews>
+            <review>
+                <user>Jane Smith</user>
+                <rating>8.8</rating>
+                <comment>Not bad, but could be better.</comment>
+            </review>
+            <!-- Add more review entries as needed -->
+        </reviews>
+    </product>
+    <!-- Add more product entries as needed -->
+</data>

@@ -1,0 +1,589 @@
+body {
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  background-image: url(../images/1703935772.jpg);
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.card {
+  width: 375px;
+  height: 350px;
+  background-color: #011625;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 200px auto;
+  position: relative;
+  padding: 30px;
+  display: flex;
+ 
+  flex-direction: column;
+
+  gap: 10px;
+      box-shadow: 5px 5px 10px #2f2a2a;
+
+}
+.card i {
+  color: orangered;
+  position: relative;
+  z-index: 3;
+  font-size: 20px;
+  margin-right: auto;
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+}
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+.card p {
+  color: #777;
+  text-align: start;
+}
+.btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  align-self: center;
+}
+.btn button {
+  border: none;
+  outline: none;
+  padding: 20px;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #082032;
+  cursor: pointer;
+}
+input {
+  background-color: rgb(0, 255, 115);
+  color: white;
+ 
+
+  margin: auto;
+  border: none;
+  outline: none;
+  padding: 10px 90px;
+   border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  text-transform: capitalize;
+}
+.score{
+  width: 70%;
+  padding: 10px;
+  background-color: #1A374D;
+    border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: orange;
+
+}
+.hide{
+  display: none;
+}
+
+.small-image {
+  max-width: 10%; 
+  height: auto;   
+}
+
+* > * {
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --color-dark: #151C35;
+  --color-secodary-dark: #464C70;
+  --color-primary: #EE709D;
+  --color-text: #8297E2;
+  --color-light: #EBEBFB;
+}
+
+.container{
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board{
+  max-width: 987px;
+  width: 100%;
+  background-color: var(--color-dark);
+  text-align: center;
+  border-radius: 8px;
+  padding: 4em 0;
+}
+
+.text-light{
+  color: var(--color-light);
+}
+
+.swiper {
+  width: 600px;
+  height: auto;
+}
+
+.swiper .swiper-slide .flex{
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper .swiper-slide .comments{
+  background-color: var(--color-light);
+  padding: 1.5em 2em;
+  width: 50%;
+  border-radius: 5px;
+  font-size: .9em;
+  position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+  content: '';
+  position: absolute;
+  bottom: -19px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-light);
+  z-index: -99;
+}
+
+
+.swiper .profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.swiper .profile img{
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid var(--color-primary);
+  margin: 10px 0;
+}
+
+.swiper .profile > a{
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.swiper .profile > span{
+  color: var(--color-text);
+  font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+  color: var(--color-text);
+  display: none;
+} 
+
+@media (min-width: 320px) {
+  .board{
+      width: auto;
+  }
+
+  .swiper {
+      width: 320px;
+    }
+
+    .board > h1, p{
+        padding: 0 2em;
+    }
+}
+
+@media (min-width: 768px) {
+  .board{
+      width: 100%;
+      margin-top: 200px;
+  }
+
+  .swiper {
+      width: 600px;
+    }
+
+  .swiper .swiper-button-prev, .swiper-button-next{
+      display: initial;
+  }
+
+}
+
+
+.thank-you h3 {
+  padding-top: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  animation: animateText 3s linear infinite;
+}
+
+/* Animation for "Thank You" text */
+@keyframes animateText {
+  0% {
+      color: black;
+  }
+  25% {
+      color: dimgray;
+  }
+  50% {
+      color: rgba(47, 79, 79, 0.8);
+  }
+  75% {
+      color: darkgray ;
+  }
+  100% {
+      color: white;
+  }
+}
+
+footer{
+  width: 100%;
+  margin-top: 10%;
+  background-color: black;
+  /* padding:.25em 1em; */
+}
+
+.additional-links ul {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.additional-links ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.additional-links ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.additional-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#copyright{
+  /* margin-left:20px; */
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.social-menu ul{
+  display: flex;
+  padding:20px;
+}
+
+.social-menu ul li{
+  list-style: none;
+  display:inline-block;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+  font-size: 25px;
+  line-height: 40px;
+  transition: .3s;
+  color: #000;
+
+}
+.social-menu{
+  width: 100%;
+}
+
+.social-menu ul li .fab:hover{
+  color: #fff;
+}
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: #4267B2;
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #00ACEE;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons li {
+  margin: 0 10px;
+}
+
+
+.box{
+  background: black;
+  display: flex;
+  justify-content: center; /* Add this line */
+  border-radius: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 7vh;
+  background-color: rgba(1, 5, 1, 0.5);
+  font-family: Arial, Helvetica, sans-serif;
+  padding:0 20px; /* Add padding to the nav for better spacing */
+  z-index: 1000; /* Ensure the navigation bar is above other content */
+}
+
+.navbar-header {
+  padding-left: 50px; /* Adjust the amount of space from the left side */
+}
+
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none; /* Move list-style property here */
+  margin-left: auto;
+}
+
+.nav-links li {
+  margin-left: 10px;
+  list-style: none; /* Remove list-style from individual li elements */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover:not(.active) {
+  color: white;
+  text-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+.nav-links .active {
+  background-color: rgba(47, 79, 79, 0.7);
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center; /* Align buttons vertically center */
+  margin-right: 20px;
+  margin-left: auto; /* Move buttons to the right */
+}
+
+.login-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: auto;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.login-btn:hover {
+  color: white;
+  text-shadow: 0 0 10px white;
+  cursor: pointer;
+}
+
+#signUpBtn{
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 20px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#signUpBtn a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+
+#signUpBtn:hover {
+  color: white;
+  text-shadow: 0 0 20px white;
+  cursor: pointer;
+} /* Change background color on hover */
+
+/*-----------------------------------------------------------------------------*/
+
+.menu-toggle{
+  display: none;
+}
+
+
+/* Media query for small screens */
+/* Media query for small screens */
+@media screen and (max-width: 984px) {
+  .nav-links {
+      display: none; /* Hide the nav links by default */
+      flex-direction: column; /* Arrange links vertically */
+      position: absolute;
+      top: 8vh; /* Adjust top position to align with navbar */
+      left: 0;
+      background-color:rgba(1, 5, 1, 0.9);
+      width: 100%;
+      padding: 20px;
+      z-index: 100; /* Ensure the menu is on top of other content */
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow for dropdown effect */
+      box-sizing: border-box;
+  }
+
+  .nav-links.active {
+      display: flex; /* Display nav links when active */
+  }
+
+  .nav-links li {
+      margin-bottom: 10px;
+  }
+
+  .menu-toggle {
+      display: block;
+      background-color: transparent;
+      padding: 0.3% 0.5%;
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      top: 1px; /* Adjust top position to align with navbar */
+      right: 20px;
+      margin-right: 1px;
+      z-index: 101; /* Ensure the toggle button is above the dropdown menu */
+  }
+
+  .menu-toggle:hover {
+      color: white;
+      text-shadow: 0 0 10px white;
+      cursor: pointer;
+  }
+
+  .menu-toggle:focus {
+      outline: none; /* Remove outline on focus */
+  }
+
+  .nav-links a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 14px 16px;
+      display: block; /* Make each link a block element */
+      transition: background-color 0.3s ease; /* Add transition effect */
+  }
+
+  .nav-links a:hover:not(.active) {
+      background-color: rgba(211, 211, 211, 0.9); /* Change background color on hover */
+      color: black;
+      border-radius: 5px;
+  }
+
+
+  .nav-links .active a {
+      padding: 14px 16px;
+      background-color: rgba(47, 79, 79, 0.5); /* Highlight active link across the full row */
+  }
+
+  #signUpBtn{
+      margin-right: 15px;
+  }
+
+  #userPoints {
+      padding: 1px 5px; /* Fallback padding for smaller screens */
+  }
+}
+
+.search-bar {
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.search-bar {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust alignment as needed */
+}
+
+.left-section {
+  width: 45%; /* Adjust width as needed */
+}
+
+.right-section {
+  width: 45%; /* Adjust width as needed */
+}

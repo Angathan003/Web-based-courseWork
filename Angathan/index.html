@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Page</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<section id="section1">
+    <div class="section-content">
+        <nav>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/LOGO.png" alt="..." height="36">
+                </a>
+                <button class="menu-toggle">&#9776;</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Products</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <button class="login-btn"><i class="fas fa-user"></i></button>
+                <button id="signUpBtn"><a href="#">Sign Up</a></button>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <select id="productDropdown" class="search-bar" onchange="displayComments()">
+                <option value="" selected disabled hidden>Select a product</option>
+            </select>
+        </div>
+        
+    </div>
+</section>
+
+<div class="container">
+    <div id="recommendedProductsSection" class="left-section">
+        <h2>Recommended Products</h2>
+        <ul id="recommendedProducts"></ul>
+    </div>
+</div>
+
+<!-- Rating state start -->
+
+        <div id="productReviewSection" class="right-section">
+        <h1>Product Reviews</h1>
+        <div id="reviewsContainer"></div>
+        <h3>Submit Your Review</h3>
+        <div class="card appear" style="flex-direction:column;justify-content: center;align-items: flex-start;">
+            <h1 style="width: fit-content;">How did we do?</h1>
+            <p role="contentinfo">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="btn" role="main">
+                <button class="click">1</button>
+                <button class="click">2</button>
+                <button class="click">3</button>
+                <button class="click">4</button>
+                <button class="click">5</button>
+            </div>
+        <form id="reviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" rows="4" required></textarea><br><br>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+    <input type="submit" name=""  value="submit" id="">
+    <input type="submit" name=""  value="subscribe" id="">
+</div>
+
+<div class="card hide" style="justify-content:flex-start;align-items: center;">
+    <img class=".small-image" src="./images/download-removebg-preview.png">
+    <div class="score">nnnnn</div>
+    <h2 style="color: white;">Thank you!</h2>
+    <p style="text-align: center; color: rgb(22, 7, 161);">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+</div>
+
+
+<footer>
+    <div class="social-menu">
+        <ul class="social-icons">
+            <li><a href="#" target="blank"><i class="fab fa-facebook"></i></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="footerLogo">
+            <img src="./images/LOGO.png" alt="..." height="50">
+        </div>
+    </div>
+    <div class="additional-links">
+        <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="Editor.html">Editors page</a></li>
+        </ul>
+    </div>
+    <div class="thank-you">
+        <h3>Thank You! for visiting our website</h3>
+    </div>
+    <div id="copyright">copyright &#169 2024, Beauty.com</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
